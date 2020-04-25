@@ -1,24 +1,13 @@
 # treinamento
 
-## Project setup
-```
-npm install
-```
+## Objetivos:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- [x] Hierarquia de componentes
+- [x] Interação de dados entre componentes irmãos 
+- [x] Interação de dados entre componentes **não irmãos (Uso de barramento)
+- [x] Hierarquia de componentes
+- [x] Hierarquia de componentes
+- [x] Hierarquia de componentes
+- [x] Hierarquia de componentes
+- [x] Hierarquia de componentes
+- [x] Hierarquia de componentes
