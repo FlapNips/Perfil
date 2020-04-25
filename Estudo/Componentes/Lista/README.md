@@ -9,7 +9,7 @@
 - [x] Melhorar Interatividade dos componentes
 
 
-##Problemas encontrados
+##Problemas encontrados##
 
 - [ ] Vincular ID com a posição que se encontra no *Array*
 - [ ] Remover um objeto da *Array* com o uso de um atributo específico como List[{id: 0, nome: MeRemova}] remove-lo usando o nome
