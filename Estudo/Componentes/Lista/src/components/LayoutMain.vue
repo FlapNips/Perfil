@@ -1,17 +1,17 @@
 <template>
     <div id="borda">
-        <Nomes/>
-        <Resultados/>
+        <Users/>
+        <Results/>
     </div>
 
 </template>
 <script>
-    import Nomes from "./Nomes";
-    import Resultados from "./Resultados";
+    import Users from "@/components/Users";
+    import Results from "@/components/Results";
 
     export default {
-        name: 'LayoutPrincipal',
-        components: {Nomes, Resultados},
+        name: 'LayoutMain',
+        components: {Users, Results},
     }
 </script>
 

@@ -1,11 +1,11 @@
 <template>
     <div id="layout">
-            <div class="divtop">
-                <div>IDs</div>
-                <div>Nomes</div>
+            <div id="principal">
+                <div class="divtop">IDs</div>
+                <div class="divtop">Nomes</div>
             </div>
             <ul>
-                <li v-for="(identidade) in lista" :key="identidade.id" @click="selectItem">
+                <li  v-for="(identidade) in lista" :key="identidade.id" @click="selectItem">
                     <div class="interno">
                         {{identidade.id}}
                     </div>
@@ -14,18 +14,25 @@
                     </div>
                 </li>
             </ul>
+            <Results>
+                <p>{{nome}} </p>
+            </Results>
     </div>
 </template>
 
 <script>
     import barramento from "@/barramento";
+    import Results from "@/components/Results";
+    
     export default {
-        name: "Nomes",
+        components: {Results},
+        name: "Users",
         data: function () {
             return {
                 ids: 'numeros',
                 nome: 'teste',
                 ativado: true,
+                hover: false,
                 lista: [],
             }
         },
@@ -36,17 +43,20 @@
             },
         },
         created() {
-            barramento.$on('addUser', addUser => {
+            barramento.$on('addUsers', addUser => {
                 this.lista = addUser;
             });
             barramento.$on('removeUser', remover => {
-                var test = this.lista.indexOf(function(teste){
-                    return teste === remover;
-                });
-                console.log(test);
-                }
-            )}
+
+            var index = this.lista.findIndex((elemento) => elemento.nome == remover)
+
+
+            this.lista.splice(index,1)
+            console.log(index)
+
+            });
         }
+    }
 
 </script>
 
@@ -57,12 +67,15 @@
         display: flex;
         flex-direction: column;
     }
-    .divtop{
+    #principal{
         display: flex;
-        justify-content: space-around;
         flex-direction: row;
         height: 30px;
         width: 100%;
+    }
+    .divtop {
+        justify-content: center;
+        width: 50%;
     }
     ul {
         list-style: none;
@@ -84,10 +97,16 @@
         height: 30px;
         font-family: Calibri;
 
+
+    }
+    .active {
+        background: rgb(173, 173, 173);
     }
     .interno {
         display: flex;
         flex-direction: row;
+        width: 50%;
+        justify-content: center;
     }
 
 

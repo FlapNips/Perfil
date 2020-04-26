@@ -1,6 +1,6 @@
 <template>
     <div>
-        <input id="teste" v-model="nameadd"  placeholder="Adicionar Pessoa">
+        <input v-model="nameadd"  placeholder="Adicionar Pessoa">
         <button @click="adcNome">Adicionar</button>
         <button @click="removeNome">Remover</button>
         <button >Cancelar</button>
@@ -10,24 +10,20 @@
     import barramento from "@/barramento";
 
     export default {
-        name: "Adicionar",
-        props: [
-            'teste'
-        ],
+        name: "AddUser",
         data: function () {
             return {
                 testenu: {},
                 nameadd: '',
                 newId: 0,
-                lastItemIndex: Number,
                 lista: []
             }
         },
         methods: {
             adcNome: function () {
-                this.lastItemIndex = (this.lista.length);
-                this.lista.push({nome: this.nameadd.toString()});
-                barramento.$emit("addUser", this.lista);
+                var lastItemIndex = (this.lista.length);
+                this.lista.push({id: lastItemIndex, nome:this.nameadd.toString()});
+                barramento.$emit("addUsers", this.lista);
             },
             removeNome: function () {
                 barramento.$emit('removeUser', this.nameadd)

@@ -1,15 +1,15 @@
 <template>
     <div>
-        <LayoutPrincipal/>
+        <LayoutMain/>
     </div>
 </template>
 
 <script>
-import LayoutPrincipal from "./components/LayoutPrincipal"
+import LayoutMain from "@/components/LayoutMain"
 
 export default {
     name: 'app',
-    components: { LayoutPrincipal },
+    components: { LayoutMain },
 }
 </script>
 

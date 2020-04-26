@@ -1,30 +1,33 @@
 <template>
-    <div id="principal">
-        <div id="resultado">
+    <div id = "principal">
+    <div id = "resultado">
         Resultados
+        <slot>
+        </slot>
         </div>
         <template>
-        <Adicionar/>
+        <AddUser/>
         </template>
     </div>
+
 </template>
 
 <script>
-    import Adicionar from "./Adicionar";
+    import AddUser from "@/components/AddUser";
 
     export default {
-        name: "Resultados",
-        components: { Adicionar},
+        name      : "Results",
+        components: { AddUser},
     }
 </script>
 
 <style scoped>
     #principal {
-        width: 50%;
+        width : 50%;
         border: black solid 2px;
     }
     #resultado {
-        clear: both;
+        clear : both;
         height: 90%;
     }
 </style>
