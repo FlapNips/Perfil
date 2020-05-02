@@ -1,2 +1,0 @@
-# VueJs
- Projetos em VueJs

@@ -2,12 +2,12 @@
     <div id = "principal">
     <div id = "resultado">
         Resultados
-        <slot>
-        </slot>
         </div>
         <template>
         <AddUser/>
         </template>
+        <slot>
+        </slot>
     </div>
 
 </template>
