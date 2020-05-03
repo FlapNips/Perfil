@@ -1,5 +1,6 @@
-![By: Bruno Alfieri | FlapNips](https://i.imgur.com/9ie3uFn.mp4)
-![enter image description here](https://i.imgur.com/DZhTf8k.gif)
+
+![By: Bruno Alfieri | FlapNips](https://i.imgur.com/uIUqDsm.gif)
+![By: Bruno Alfieri | FlapNips](https://i.imgur.com/DZhTf8k.gif)
 Lorem aaaa
 - [Paste Your Document In Here](#paste-your-document-in-here)
   * [And a table of contents](#and-a-table-of-contents)
