@@ -18,10 +18,10 @@
 4. [Sobre mim / About me](#about-me)
 5. [Objetivo / Objectivie](#objective)
 
-<a  name="projects">
-<img align="left" src="https://i.imgur.com/bHwcHQU.gif">
-</a> 
----
+<p align="center">
+<a name="projects"></a>
+<img  src="https://i.imgur.com/bHwcHQU.gif">
+</p>
 
 <a name="project-professional"></a>
 **1.1 - PROFISSIONAIS**
@@ -45,10 +45,11 @@
 |:--:|:--:|:--:|:--:|
 |  X| X|-|![no-start](https://i.imgur.com/0deQHEj.png)|
 
-<a  name="skills">
+<p>
+<a  name="skills"></a>
 <img align="left" src="https://i.imgur.com/PDyjdCF.gif">
-</a> 
-----
+</p>
+
 
 |Cursos| Progresso (Curso)|Plataformas Usadas|
 |:--:|--|--|
@@ -67,25 +68,24 @@
 |Docker|![enter image description here](https://i.imgur.com/WCPOczY.png)|X|
 |NodeJS|![enter image description here](https://i.imgur.com/WCPOczY.png)|X|
 |Banco de Dados não relacional|![enter image description here](https://i.imgur.com/WCPOczY.png)|X|
- <a name="objective">
-  <img align="left" src="https://i.imgur.com/JhvZPnn.gif">
-</a>
----
+
+<p>
+<a name="language"></a><img align="left" src="https://i.imgur.com/JhvZPnn.gif">
+</p>
+
 |  INGLÊS|Nível|
 |:--:|:--:|
 |Conversação|![standart-level](https://i.imgur.com/xlQoZLf.png) |
 |Leitura|![intermediate-level](https://i.imgur.com/oeIFaVk.png)|
 | Escrita| ![standart-level](https://i.imgur.com/xlQoZLf.png)|
- <a name="about-me">
+
+<a name="about-me"></a>
  <img align="left" src="https://i.imgur.com/cybRjOg.gif">
-</a>
----
+
 **Lorem Ipsum** é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
 
-
- <a name="objective">
+<a name="objective"></a>
   <img align="left" src="https://i.imgur.com/7bxwvKN.gif">
-</a>
----
+
 **Lorem Ipsum** é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
 
