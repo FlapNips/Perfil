@@ -41,23 +41,24 @@
 <br>
 
 
-|Cursos| Progresso|Plataformas Usadas|
+|Cursos| Progresso (Curso)|Plataformas Usadas|
 |--|--|--|
-|<center>Lógica de Programação</center>  |![enter image description here](https://i.imgur.com/En3ayXE.png)|All|
-|<center>HTML5</center>|![enter image description here](https://i.imgur.com/En3ayXE.png)|Web|
-|<center>CSS3|![enter image description here](https://i.imgur.com/En3ayXE.png)|Web|
-|<center>Java|![enter image description here](https://i.imgur.com/En3ayXE.png)|Web & Aplicativo|
-|<center>JavaScript ECMA3<center>|![enter image description here](https://i.imgur.com/En3ayXE.png)|Web|
-|<center>PPO - Programação Orientada a Objeto</center>|![enter image description here](https://i.imgur.com/En3ayXE.png)|Web & App|
+|<center>Lógica de Programação</center>  |![enter image description here](https://i.imgur.com/gcELukW.png)|All|
+|<center>HTML5</center>|![enter image description here](https://i.imgur.com/gcELukW.png)|Web|
+|<center>CSS3|![enter image description here](https://i.imgur.com/gcELukW.png)|Web|
+|<center>Java|![enter image description here](https://i.imgur.com/gcELukW.png)|Web & Aplicativo|
+|<center>JavaScript ECMA3<center>|![enter image description here](https://i.imgur.com/gcELukW.png)|Web|
+|<center>PPO - Programação Orientada a Objeto</center>|![enter image description here](https://i.imgur.com/gcELukW.png)|Web & App|
+|<center>GIT</center>|![enter image description here](https://i.imgur.com/gcELukW.png)|All|
 |<center> Aplicativos Android</center>|![enter image description here](https://i.imgur.com/tuDGLNN.png)|App|
-|<center>GIT</center>|![enter image description here](https://i.imgur.com/En3ayXE.png)|All|
-|<center>VueJS</center>|![enter image description here](https://i.imgur.com/zYRw5Oc.png)|Web|
-|<center>Flutter</center>|![enter image description here](https://i.imgur.com/zYRw5Oc.png)|App|
-|<center>Docker</center>|![enter image description here](https://i.imgur.com/Yy6s4eC.png)|X|
-|<center>NodeJS</center>|![enter image description here](https://i.imgur.com/Yy6s4eC.png)|X|
-|<center>Banco de Dados relacional</center>|![enter image description here](https://i.imgur.com/EoJAogD.png)|Web & App|
-|<center>Banco de Dados não relacional</center>|![enter image description here](https://i.imgur.com/Yy6s4eC.png)|X|
-|<center>Firebase</center>|![enter image description here](https://i.imgur.com/zYRw5Oc.png)|App|
+|<center>VueJS</center>|![enter image description here](https://i.imgur.com/9AdfDHh.png)|Web|
+|<center>Flutter</center>|![enter image description here](https://i.imgur.com/9AdfDHh.png)|App|
+|<center>Firebase</center>|![enter image description here](https://i.imgur.com/9AdfDHh.png)|App|
+|<center>Banco de Dados relacional</center>|![enter image description here](https://i.imgur.com/cK0pRbW.png)|Web & App|
+|<center>Docker</center>|![enter image description here](https://i.imgur.com/WCPOczY.png)|X|
+|<center>NodeJS</center>|![enter image description here](https://i.imgur.com/WCPOczY.png)|X|
+|<center>Banco de Dados não relacional</center>|![enter image description here](https://i.imgur.com/WCPOczY.png)|X|
+
 
  <a name="about-me"></a>
  <img align="left" src="https://i.imgur.com/cybRjOg.gif">
