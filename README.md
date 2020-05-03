@@ -1,4 +1,4 @@
-![By: Bruno Alfieri | FlapNips](https://i.imgur.com/7xR2g5c.gif)
+![By: Bruno Alfieri | FlapNips](https://imgur.com/AG3gXVm)
 ![enter image description here](https://i.imgur.com/DZhTf8k.gif)
 Lorem aaaa
 - [Paste Your Document In Here](#paste-your-document-in-here)
