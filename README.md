@@ -4,7 +4,9 @@
 </p>
 
 **Lorem Ipsum** é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
-
+<br>
+<br>
+<br>
 <p align="center">
 <img src="https://i.imgur.com/4YZFlwR.gif">
 </p>
@@ -17,6 +19,9 @@
 3. [Idioma / Language](#language)
 4. [Sobre mim / About me](#about-me)
 5. [Objetivo / Objectivie](#objective)
+<br>
+<br>
+<br>
 
 <hr>
 <p align="center">
@@ -47,6 +52,9 @@
 |Project| Web |App|Progresso|
 |:--:|:--:|:--:|:--:|
 |  X| X|-|![no-start](https://i.imgur.com/0deQHEj.png)|
+<br>
+<br>
+<br>
 
 <hr>
 <p align="center">
@@ -71,6 +79,9 @@
 |Docker|![enter image description here](https://i.imgur.com/WCPOczY.png)|X|
 |NodeJS|![enter image description here](https://i.imgur.com/WCPOczY.png)|X|
 |Banco de Dados não relacional|![enter image description here](https://i.imgur.com/WCPOczY.png)|X|
+<br>
+<br>
+<br>
 
 <hr>
 <p align="center">
@@ -83,6 +94,9 @@
 |Conversação|![standart-level](https://i.imgur.com/xlQoZLf.png) |
 |Leitura|![intermediate-level](https://i.imgur.com/oeIFaVk.png)|
 | Escrita| ![standart-level](https://i.imgur.com/xlQoZLf.png)|
+<br>
+<br>
+<br>
 
 <hr>
 <p align="center">
