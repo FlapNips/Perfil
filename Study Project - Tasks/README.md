@@ -4,7 +4,8 @@
 
 ![](https://i.imgur.com/g48hupp.png)
 <hr>
-#Visão Geral
+
+# Visão Geral
 
 Uma atividade para testar novos conhecimentos.
 >1. Uso de componentes
@@ -15,10 +16,10 @@ Uma atividade para testar novos conhecimentos.
 >6. Começo da compreensão de JSON
 >7. Uso de métodos do ciclo de vida
 
-#Instalação / Installation
+# Instalação / Installation
 
-Dependencies:
+*Dependencies*
 > npm i
 
-Start server
+*Start server*
 > npm run serve
