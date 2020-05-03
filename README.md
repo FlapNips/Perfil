@@ -1,5 +1,4 @@
-
-![enter image description here](https://media.giphy.com/media/kf30Esma4avqvx7nr8/giphy.gif)
+![By: Bruno Alfieri | FlapNips](https://i.imgur.com/7xR2g5c.gif)
 ![enter image description here](https://i.imgur.com/DZhTf8k.gif)
 Lorem aaaa
 - [Paste Your Document In Here](#paste-your-document-in-here)
