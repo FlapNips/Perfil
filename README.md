@@ -21,7 +21,7 @@
 <p align="center">
 <a name="projects"></a>
 <img  src="https://i.imgur.com/bHwcHQU.gif">
-</p>
+</p><hr>
 
 <a name="project-professional"></a>
 **1.1 - PROFISSIONAIS**
