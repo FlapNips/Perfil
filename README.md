@@ -14,33 +14,41 @@
 	+ [Estudos / Studies](#project-study)
 	+ [Pessoais / Personal](#project-personal)
 2. [Habilidades / Skills](#skills)
-3. [Sobre mim / About me](#about-me)
-4. [Objetivo / Objectivie](#objective)
+3. [Idioma / Language](#language)
+4. [Sobre mim / About me](#about-me)
+5. [Objetivo / Objectivie](#objective)
 
-<a  name="projects"></a>  
-<img align="left" src="https://i.imgur.com/bHwcHQU.gif"><br>
-<br>
- 
+<a  name="projects">
+<img align="left" src="https://i.imgur.com/bHwcHQU.gif">
+</a> 
+---
+
 <a name="project-professional"></a>
 **1.1 - PROFISSIONAIS**
+
+|Project| Web |App|Progresso|
+|:--:|:--:|:--:|:--:|
+|X|X|-|![no-start](https://i.imgur.com/0deQHEj.png)|
 
 
 <a name="project-study"></a>
 **1.2 - ESTUDOS**
+
 |Project| Web |App|Progresso|
 |:--:|:--:|:--:|:--:|
-|  [Tasks](https://github.com/FlapNips/VueJs/tree/master/Study%20Project%20-%20Tasks)| X|-|![enter image description here](https://i.imgur.com/zdMav2h.png)
-
-[Project Tasks ](https://github.com/FlapNips/VueJs/tree/master/Study%20Project%20-%20Tasks)
+|[Tasks](https://github.com/FlapNips/VueJs/tree/master/Study%20Project%20-%20Tasks)|X|-|![finalization](https://i.imgur.com/zdMav2h.png)|
 
 <a name="project-personal"></a>
 **1.3 - PESSOAIS**
 
+|Project| Web |App|Progresso|
+|:--:|:--:|:--:|:--:|
+|  X| X|-|![no-start](https://i.imgur.com/0deQHEj.png)|
 
-
-<a  name="skills"></a> 
+<a  name="skills">
 <img align="left" src="https://i.imgur.com/PDyjdCF.gif">
-<br>
+</a> 
+----
 
 |Cursos| Progresso (Curso)|Plataformas Usadas|
 |:--:|--|--|
@@ -59,24 +67,25 @@
 |Docker|![enter image description here](https://i.imgur.com/WCPOczY.png)|X|
 |NodeJS|![enter image description here](https://i.imgur.com/WCPOczY.png)|X|
 |Banco de Dados não relacional|![enter image description here](https://i.imgur.com/WCPOczY.png)|X|
+ <a name="objective">
+  <img align="left" src="https://i.imgur.com/JhvZPnn.gif">
+</a>
 ---
 |  INGLÊS|Nível|
 |:--:|:--:|
-|Conversação|![enter image description here](https://i.imgur.com/xlQoZLf.png) |
-|Leitura|![enter image description here](https://i.imgur.com/oeIFaVk.png)|
-| Escrita| ![enter image description here](https://i.imgur.com/xlQoZLf.png)|
-<div></div>
-
- <a name="about-me"></a>
+|Conversação|![standart-level](https://i.imgur.com/xlQoZLf.png) |
+|Leitura|![intermediate-level](https://i.imgur.com/oeIFaVk.png)|
+| Escrita| ![standart-level](https://i.imgur.com/xlQoZLf.png)|
+ <a name="about-me">
  <img align="left" src="https://i.imgur.com/cybRjOg.gif">
- 
-<div>
+</a>
+---
 **Lorem Ipsum** é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
-</div>
 
- <a name="objective"></a>
+
+ <a name="objective">
   <img align="left" src="https://i.imgur.com/7bxwvKN.gif">
-
-<div>
+</a>
+---
 **Lorem Ipsum** é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
-</div>
+
