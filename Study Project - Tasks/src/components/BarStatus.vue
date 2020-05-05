@@ -1,6 +1,6 @@
 <template>
     <div id="layout">
-        <div @click="percentTask" id="title-text">Título</div>
+        <div @click="percentTask" id="title-text">{{title}}</div>
         <div id="layout-bar">
             <div id="status" :style="{width:percentTask+'%'}"></div>
             <div id="progress-bar-text">{{percentTask}}%</div>
