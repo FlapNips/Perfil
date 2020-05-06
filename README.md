@@ -51,7 +51,7 @@
 
 |Project| Web |App|Progresso|
 |:--:|:--:|:--:|:--:|
-|  X| X|-|![no-start](https://i.imgur.com/0deQHEj.png)|
+| Social network |X|X|![no-start](https://i.imgur.com/0deQHEj.png)|
 <br>
 <br>
 <br>
