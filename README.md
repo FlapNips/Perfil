@@ -44,14 +44,14 @@
 
 |Project| Web |App|Progresso|
 |:--:|:--:|:--:|:--:|
-|[Tasks](https://github.com/FlapNips/VueJs/tree/master/Study%20Project%20-%20Tasks)|X|-|![finalization](https://i.imgur.com/zdMav2h.png)|
+|[Tasks](https://github.com/FlapNips/Projetos/tree/master/tasks)|X|-|![finalization](https://i.imgur.com/zdMav2h.png)|
 
 <a name="project-personal"></a>
 **1.3 - PESSOAIS**
 
 |Project| Web |App|Progresso|
 |:--:|:--:|:--:|:--:|
-| Social network |X|X|![no-start](https://i.imgur.com/0deQHEj.png)|
+| [Social network](https://github.com/FlapNips/Projetos/tree/master/personal) |X|X|![no-start](https://i.imgur.com/0deQHEj.png)|
 <br>
 <br>
 <br>
