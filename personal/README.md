@@ -1,4 +1,4 @@
-# liberty
+# personal
 
 ## Project setup
 ```
