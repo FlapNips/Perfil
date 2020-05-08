@@ -28,7 +28,6 @@ export default {
     },
     data() {
         return {
-
         }
     }
 }
@@ -47,6 +46,7 @@ export default {
     display: flex;
     flex-direction: row;
     text-align: center;
+    justify-content: center;
 }
 .circle{
   position     : absolute;
