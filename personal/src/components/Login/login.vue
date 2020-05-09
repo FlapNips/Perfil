@@ -13,9 +13,9 @@
   </div>
 </template>
 <script>
-import JoinBar from './Sign-In/JoinBar.vue'
-import CardsJoin from './Sign-In/CardsJoin.vue'
-import TextRight from './Sign-In/TextRight.vue'
+import JoinBar from './SignIn/JoinBar.vue'
+import CardsJoin from './SignIn/CardsJoin.vue'
+import TextRight from './SignIn/TextRight.vue'
 
 export default {
     components: {
