@@ -10,9 +10,7 @@ export default {
 </script>
 <style scooped>
 #layout-textright {
-    min-width: 200px;
-    width: 20%;
-    height: 10px;
+    width: 300px;
     background: chartreuse;
 }
 </style>

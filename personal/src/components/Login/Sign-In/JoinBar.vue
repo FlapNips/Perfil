@@ -18,8 +18,7 @@ export default {
     height: 60px;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
-    min-width: 1000px;
+    width: 1000px;
     background-color: rgb(89, 117, 170);
 }
 </style>
