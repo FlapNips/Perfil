@@ -51,7 +51,7 @@
 
 |Project| Web |App|Progresso|
 |:--:|:--:|:--:|:--:|
-| [Social network](https://github.com/FlapNips/Projetos/tree/master/personal) |X|X|![no-start](https://i.imgur.com/0deQHEj.png)|
+| [First App](https://github.com/FlapNips/Projetos/tree/master/first-project-personal) |X|X|![no-start](https://i.imgur.com/0deQHEj.png)|
 <br>
 <br>
 <br>
