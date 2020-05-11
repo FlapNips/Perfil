@@ -41,8 +41,9 @@ export default {
 	margin        : 20px auto 0 auto;
 }
 #context-center-login{
-	display       : flex;
-	flex-direction: row;
+	display        : flex;
+	flex-direction : row;
+	margin-top     : 10px;
 	justify-content: space-between;
 }
 </style>

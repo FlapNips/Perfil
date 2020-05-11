@@ -21,6 +21,7 @@ export default {
 <style scooped>
 .div-textright-login {
   border: solid black 2px;
+  cursor: pointer;
 }
 #layout-textright-login {
   text-align      : center;
