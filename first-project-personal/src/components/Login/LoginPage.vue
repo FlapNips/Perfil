@@ -6,6 +6,7 @@
 			<CardNews/>
 			<TextRight/>
 		</div>
+	<Footer/>
 	</div>
   </div>
 </template>
@@ -14,12 +15,14 @@
 import MenuLogin from './MenuLogin'
 import CardNews from './CardNews'
 import TextRight from './TextRight'
+import Footer from '@/components/Footer.vue'
 
 export default {
 	components: {
 		MenuLogin,
 		CardNews,
-		TextRight
+		TextRight,
+		Footer
 	}
 }
 </script>
@@ -31,7 +34,7 @@ export default {
 	width         : 100vw;
 	min-width     : 1000px;
 	height        : 100vh;
-	background    : wheat;
+	overflow-y: auto;
 }
 #context-login {
 	display       : flex;
@@ -45,5 +48,6 @@ export default {
 	flex-direction : row;
 	margin-top     : 10px;
 	justify-content: space-between;
+	word-wrap: break-word;
 }
 </style>

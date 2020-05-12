@@ -1,69 +1,63 @@
 <template>
-  <div id="layout-card-news">
-  <button id="button-return-img" @click="returnImage" class="btn-image"> 	&lt; </button>
-    <img :src="require(`@/assets/CardsNews${image}.png`)"/>
-    <h2>{{titleCurrent}}</h2>
-    <p>{{loremCurrent}}</p>
-    <h3>{{authorCurrent}}</h3>
-    <button id="button-next-img" @click="nextImage" class="btn-image">	&gt; </button>
+  <div id="layout-carousel-login">
+    <b-carousel
+      id="carousel-1"
+      v-model="slide"
+      :interval="0"
+      controls
+      indicators
+      background="#ababab"
+      style="text-shadow: 1px 1px 2px #333;"
+      @sliding-start="onSlideStart"
+      @sliding-end="onSlideEnd"
+    >
+      <b-carousel-slide
+      >
+        <template v-slot:img>
+          <img
+            class="d-block img-fluid w-100"
+            src="https://picsum.photos/1024/480/?image=58"
+
+          />
+          <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis architecto ratione, impedit ex debitis sequi aspernatur aliquam. Sed animi nihil nostrum quasi, officia soluta culpa quo quos cum et fugit?
+          </p>
+        </template>
+      </b-carousel-slide>
+      <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
+          a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
+        </p>
+      </b-carousel-slide>
+    </b-carousel>
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      image: 0,
-    }
-  },
-  computed: {
-    titleCurrent() {
-      return `Título da imagem:${this.image}`
+  export default {
+    data() {
+      return {
+        teste: '1000',
+        slide: 0,
+        sliding: null
+      }
     },
-    loremCurrent(){
-      return `Conteudo da imagem:${this.image}`
-    },
-    authorCurrent() {
-      return `Autor:${this.image}`
-    }
-  },
-  methods: {
-    nextImage() {
-      this.image == 2 ? this.image = 0 : this.image++
-    },
-    returnImage() {
-      this.image == 0 ? this.image = 2 : this.image--
+    methods: {
+      onSlideStart() {
+        this.sliding = true
+      },
+      onSlideEnd() {
+        this.sliding = false
+      }
     }
   }
-}
 </script>
 
 <style scooped>
-#layout-card-news {
-  position: relative;
-  background: cornflowerblue;
+#layout-carousel-login {
   width: 60%;
-  text-align: center;
-}
-#button-return-img {
-  left: 0;
-}
-#button-next-img {
-  right: 0;
-}
-.btn-image {
-  position: absolute;
-  top: 0;
-  border: 2px black solid;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  background-color: transparent;
-  bottom: 0;
-  height: 60px;
-  width: 60px;
-  margin-top: auto;
-  margin-bottom: auto;
+  height: 100%;
 
 }
 </style>
