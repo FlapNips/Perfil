@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="efect-login">
-        LIBERTY
+        <h1>LIBERTY</h1>
         </div>
     </div>
 </template>
@@ -15,7 +15,8 @@ export default {
 <style scoped>
 .efect-login {
 	position: relative;
-	font-size: 5em;
+	font-size: 5rem;
+	margin: 0 -20px 0 -20px;
 	-webkit-animation: efect-login 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation        : efect-login 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
