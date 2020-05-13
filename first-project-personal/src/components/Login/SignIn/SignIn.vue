@@ -11,7 +11,7 @@ export default {
 
 }
 </script>
-<style scooped>
+<style scoped>
 #layout-sign-in {
     width: 100vw;
     height: 100vw;

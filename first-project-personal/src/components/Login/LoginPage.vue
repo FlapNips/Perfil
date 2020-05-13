@@ -1,53 +1,40 @@
 <template>
-  <div id="layout-login">
-	<div id="context-login">
-		<MenuLogin/>
-		<div id="context-center-login">
-			<CardNews/>
-			<TextRight/>
-		</div>
-	<Footer/>
+	<div id="layout-login" class="justify-content-center">
+		<MainLogin id="MainLogin" class="
+		col-sm
+		col-md-3
+		col-lg-3
+		align-self-center
+		m-3
+		p-2
+		"></MainLogin>
 	</div>
-  </div>
 </template>
 
 <script>
-import MenuLogin from './MenuLogin'
-import CardNews from './CardNews'
-import TextRight from './TextRight'
-import Footer from '@/components/Footer.vue'
+import MainLogin from './MainLogin.vue'
 
 export default {
 	components: {
-		MenuLogin,
-		CardNews,
-		TextRight,
-		Footer
+		MainLogin
 	}
 }
 </script>
 
 <style scooped>
+#MainLogin {
+	z-index: 2;
+}
 #layout-login {
 	display       : flex;
-	flex-direction: column;
-	width         : 100vw;
-	min-width     : 1000px;
-	height        : 100vh;
-	overflow-y: auto;
-}
-#context-login {
-	display       : flex;
-	flex-direction: column;
-	width         : 1000px;
-	height        : 80%;
-	margin        : 20px auto 0 auto;
-}
-#context-center-login{
-	display        : flex;
 	flex-direction : row;
-	margin-top     : 10px;
-	justify-content: space-between;
-	word-wrap: break-word;
+	width          : 100vw;
+	height         : 100vh;
+	margin         : 0;
+	overflow-y     : auto;
+	justify-content: center;
+	background-color: var(--first-color);
+	z-index: -1;
 }
+
 </style>

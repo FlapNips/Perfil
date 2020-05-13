@@ -8,11 +8,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #layout-footer {
   position        : relative;
   width           : 1000px;
-  background-color: wheat;
   right           : 0;
   left            : 0;
   bottom          : 0;
