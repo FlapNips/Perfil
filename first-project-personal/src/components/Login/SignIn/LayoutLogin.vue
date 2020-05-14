@@ -1,11 +1,5 @@
 <template>
 <div id="layout-main-login"  class="row">
-		<Effect class="
-		col-12
-		text-center
-		mx-auto
-		align-middle
-		"/>
 
 		<Login class="
 		mx-auto
@@ -13,9 +7,16 @@
 		col-sm-6
 		col-md-6
 		col-lg-12
+		">
+		<Effect class="
+		col-12
+		text-center
+		mx-auto
+		align-middle
 		"/>
 
-		<Register class="mx-auto"/>
+		</Login>
+
 
 </div>
 </template>
@@ -23,13 +24,11 @@
 <script>
 import Effect from './Effect.vue'
 import Login from './Login.vue'
-import Register from './Register.vue'
 
 export default {
 	components: {
 		Effect,
 		Login,
-		Register
 	},
 }
 </script>

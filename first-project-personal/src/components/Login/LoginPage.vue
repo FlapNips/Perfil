@@ -7,7 +7,9 @@
 		align-self-center
 		m-3
 		p-2
-		"/>
+		">
+		<slot></slot>
+		</LayoutLogin>
 		
 		<div id="circle-animate" class="
 		d-none 

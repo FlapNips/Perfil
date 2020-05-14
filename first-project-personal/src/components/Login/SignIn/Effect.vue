@@ -1,7 +1,10 @@
 <template>
     <div>
-        <div class="efect-login">
-        <h1>LIBERTY</h1>
+        <div class="efect-title">
+			<h1>FIRST WEB</h1>
+        </div>
+        <div class="efect-subtitle">
+		SUBTITLE	
         </div>
     </div>
 </template>
@@ -13,10 +16,17 @@ export default {
 </script>
 
 <style scoped>
-.efect-login {
+.efect-title {
 	position: relative;
 	font-size: 5rem;
-	margin: 0 -20px 0 -20px;
+	margin: 0 -20px -10px -20px;
+	-webkit-animation: efect-login 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation        : efect-login 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.efect-subtitle {
+	position: relative;
+	font-size: 1em;
+	margin: 0;
 	-webkit-animation: efect-login 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation        : efect-login 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }

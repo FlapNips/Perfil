@@ -1,5 +1,6 @@
 <template>
-<div>
+<div class="border-login">
+    <slot></slot>
     <div class="input-login">
 		<label for="username">
         Usuário
@@ -10,7 +11,7 @@
             @
             </span>
             </div>
-            <input type="text" maxlength="16" class="form-control" id="username" placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+            <input type="text" maxlength="16" class="form-control" id="username" placeholder="Usuário" aria-describedby="inputGroupPrepend3" required>
         </div>
 	</div>
     <div class="input-login">
@@ -19,14 +20,14 @@
         </label>
         <input type="password" maxlength="25" class="form-control" placeholder="Senha" id="pwd"/>
     </div>
-    <div class="input-group" style="margin: 20px;">
-        <div class="col-6 text-center ">
-            <button :class="classRemember" @click="changeRemember" type="button" id="autoLoginButton">
+    <div class="input-group mx-auto justify-content-center m-1">
+        <div class="col-12 m-1">
+            <button :class="classRemember" class="col-12" @click="changeRemember" type="button">
 				Lembrar-me
             </button>
         </div>
-        <div class="col-6 text-center">
-            <button class="btn btn-primary">
+        <div class="col-12 m-1">
+            <button class="btn btn-primary col-12">
             Entrar
             </button>
         </div>
@@ -34,8 +35,13 @@
     <div class="separator">
         OU
     </div>
-    <div class="btn btn-link mx-auto" style="width: 100%;">
-        Esqueceu a senha?
+    <div class="row justify-content-center">
+        <div class="btn btn-link mx-auto m-2 col-6">
+            Esqueceu a senha?
+        </div>
+        <div class="btn btn-link mx-auto m-2 col-6">
+            Junte-se a nós !
+        </div>
     </div>
 </div>
 </template>
@@ -44,8 +50,8 @@
 export default {
 	data() {
 		return {
-			remember: true,
-			classRemember: 'btn btn-success'
+			remember: false,
+			classRemember: 'btn btn-danger'
 		}
 	},
 	methods: {
@@ -62,6 +68,10 @@ export default {
 </script>
 
 <style>
+.border-login {
+    border: 1px solid black;
+    border-radius: 5%;
+}
 .input-login {
 	margin         : 10px;
 	justify-content: center;
