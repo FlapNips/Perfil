@@ -40,7 +40,7 @@
             Esqueceu a senha?
         </div>
         <div class="btn btn-link mx-auto m-2 col-6">
-            Junte-se a nós !
+            <router-link to="/register">Junte-se a nós !</router-link>
         </div>
     </div>
 </div>
@@ -67,7 +67,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .border-login {
     border: 1px solid black;
     border-radius: 5%;
