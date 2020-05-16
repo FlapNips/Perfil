@@ -1,13 +1,15 @@
 <template>
-<div id="layout-main-login"  class="row">
-
-		<Register class="
-		mx-auto
+<div id="layout-register" class="
 		col-12
-		col-sm-6
-		col-md-6
-		col-lg-12
-		"/>
+		col-sm-12
+		col-md-12
+		col-lg-4
+		col-xl-4
+		my-auto
+		mx-auto
+		">
+
+		<Register id="register" class="p-4"/>
 		<Effect class="
 		col-12
 		text-center
@@ -30,16 +32,13 @@ export default {
 }
 </script>
 <style scoped>
-#layout-main-login {
-	position        : relative;
-	background-color: var(--first-color);
-	display         : block;
-	border-radius   : 20px;
-	background-color: var(--first-color);
-	margin          : 0;
-	padding         : 20px;
-	height          : max-content;
-	z-index         : 1;
+#layout-register {
+	color: white;
+	overflow-y      : auto;
+	background-color: var(--second-color);
 }
-
+#register {
+	border: 2px solid var(--first-color);
+	border-radius: 3em;
+}
 </style>

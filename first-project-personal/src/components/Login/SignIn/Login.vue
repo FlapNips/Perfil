@@ -1,35 +1,22 @@
 <template>
 <div class="border-login">
     <slot></slot>
-    <div class="input-login">
-		<label for="username">
-        Usuário
-        </label>
-		<div class="input-group">
-			<div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroupPrepend3">
-            @
-            </span>
-            </div>
-            <input type="text" maxlength="16" class="form-control" id="username" placeholder="Usuário" aria-describedby="inputGroupPrepend3" required>
-        </div>
-	</div>
-    <div class="input-login">
-        <label for="pwd">
-            Senha 
-        </label>
-        <input type="password" maxlength="25" class="form-control" placeholder="Senha" id="pwd"/>
-    </div>
+    <Username/>
+    <Password/>
     <div class="input-group mx-auto justify-content-center m-1">
         <div class="col-12 m-1">
-            <button :class="classRemember" class="col-12" @click="changeRemember" type="button">
+            <button :class="classRemember"
+             class="col-12"
+             @click="changeRemember">
 				Lembrar-me
             </button>
         </div>
         <div class="col-12 m-1">
-            <button class="btn btn-primary col-12">
-            Entrar
-            </button>
+            <router-link to="/home">
+                <button class="btn btn-primary col-12">
+                    Entrar
+                </button>
+            </router-link>
         </div>
     </div>
     <div class="separator">
@@ -40,14 +27,23 @@
             Esqueceu a senha?
         </div>
         <div class="btn btn-link mx-auto m-2 col-6">
-            <router-link to="/register">Junte-se a nós !</router-link>
+            <router-link to="/register">
+            Junte-se a nós !
+            </router-link>
         </div>
     </div>
 </div>
 </template>
 
 <script>
+import Username from './InputLoginUsername.vue'
+import Password from './InputLoginPassword.vue'
+
 export default {
+    components: {
+        Username,
+        Password
+    },
 	data() {
 		return {
 			remember: false,
@@ -71,10 +67,6 @@ export default {
 .border-login {
     border: 1px solid black;
     border-radius: 5%;
-}
-.input-login {
-	margin         : 10px;
-	justify-content: center;
 }
 .separator {
     display    : flex;
