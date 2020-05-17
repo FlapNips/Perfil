@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view>
+    <router-view class="container-fluid">
       <Footer/>
     </router-view>
   </div>

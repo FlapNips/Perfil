@@ -1,32 +1,33 @@
 <template>
-<div id="layout-main" class="row text-center">
-        <div class="col-2">
-            <div class="col-12 h-100 border">
+<b-row id="layout-main" class="text-center">
+        <b-button id="action-button" v-b-toggle.side variant="danger">X</b-button>
+        <b-sidebar id="side">
+            <b-col class="mx-auto p-3">
             <!-- MENU MAIN-->
                 <MenuProfile/>
-            </div>
-        </div>
-        <div class="col-10">
-            <div class="row menu-and-footer">
+            </b-col>
+        </b-sidebar>
+        <b-col class="col">
+            <b-row class="row menu-and-footer">
                 <div id="menu-top" class="col-12 border">Menu</div>
                 <!-- MENU TOP RIGHT-->
                 <MenuTop/>
-            </div>
-            <div id="content" class="row">
-                <div class="col-8 border">
+            </b-row>
+            <b-row id="content" class="row">
+                <b-col class="col-8 border">
                 <!-- CONTENT MAIN-->
                 <Content/>
-                </div>
-                <div class="col-4 border">
+                </b-col>
+                <b-col class="col-4 border">
                 <!-- FLOAT RIGHT CONTENT-->
                 <FloatRight/>
-                </div>
-            </div>
-            <div class="row" style="height: 5vh">
+                </b-col>
+            </b-row>
+            <b-row class="row" style="height: 5vh">
                 <slot></slot>
-            </div>
-        </div>
-</div>
+            </b-row>
+        </b-col>
+</b-row>
 </template>
 
 <script>
@@ -40,6 +41,20 @@ export default {
         MenuTop,
         Content,
         FloatRight
+    },
+    data(){
+        return {
+            showMenu: true
+        }
+    },
+    computed: {
+        statsMenu(){
+            if(this.showMenu) {
+                return 'danger'
+            } else {
+                return 'success'
+            }
+        }
     }
 
 }
@@ -48,6 +63,10 @@ export default {
 #layout-main {
     width: 100vw;
     height: 100vh;
+}
+#action-button {
+    position: absolute;
+    z-index: 1000;
 }
 .menu-and-footer {
     height: 5%;

@@ -1,21 +1,39 @@
 <template>
-  <div class="col-12">
+  <div class="container-fluid">
     <div id="profile" class="row m-1 p-0">
-        <b-img id="profile-img" src="@/assets/profile.png" class="col-8 m-0 p-0 mx-auto border-black rounded-circle"/>
-        <span id="profile-username" class="col-12 mx-auto p-0 w-100">@{{username}}</span>
-        <div id="rank-images" class="col-12 mx-auto p-0">
-            <b-img  src="@/assets/rank.png" class="rank-img rank-first col-11 mx-auto p-0 "/>
-            <b-img  src="@/assets/rank-right.png" class="rank-img rank-second col-11 mx-auto p-0 "/>
-            <b-img  src="@/assets/rank-left.png" class="rank-img rank-second col-11 mx-auto p-0 "/>
+        <b-img id="rank-img" :style="'opacity:'+ teste" src="@/assets/rank.png" class="col-3"/>
+        <b-img id="profile-img" @mouseenter="teste = 1" @mouseout="teste = 0" src="@/assets/profile.png" class="col-8 m-0 p-0 mx-auto border-black rounded-circle"/>
+        <span id="profile-username" @mouseenter="teste = 1" @mouseout="teste = 0" class="col-12 text-center mx-auto p-0">@{{username}}</span>
+        <div id="banner-images" @mouseenter="teste = 1" @mouseout="teste = 0" class="col-12 mx-auto p-0">
+            <b-img  src="@/assets/banner.png" class="rank-img rank-first col-11 mx-auto p-0 "/>
+            <b-img  src="@/assets/banner-right.png" class="rank-img rank-second col-11 mx-auto p-0 "/>
+            <b-img  src="@/assets/banner-left.png" class="rank-img rank-second col-11 mx-auto p-0 "/>
         </div>
     </div>
-    <div class="col-12 separator mt-3">
-        <div @click="profileOptions()" class="btn-profile col-4 m-0 p-0 my-auto mx-auto btn">Perfil</div>
+    <!-- DESCRIPTION -->
+    <div class="row">
+        <div class="col-9 text-wrap text-center border m-2 mx-auto">
+            Uma pessoa comum com uma descrição comum.
+        </div>
     </div>
-        <div v-show="profileOptionsShow" class="more-options-show row m-2 p-0 mx-auto animated slideInLeft">
-            <div class="btn-profile p-0 col-3 m-1 mx-auto btn">Editar</div>
-            <div class="btn-profile p-0 col-3 m-1 mx-auto btn">Rank</div>
-            <div class="btn-profile p-0 col-3 m-1 mx-auto btn">teste 1</div>
+    <!-- RANK & PROFILE BUTTON -->
+    <div class="row mt-1">  
+        <div class="col-10 border mx-auto">
+            <div class="row">
+            <span class="col-6 text-center border" src>5643</span>
+            <div @click="profileOptions()" class="btn-profile col-6 m-0 p-0 mx-auto btn">Perfil</div>
+            </div>
+        </div>
+    </div>
+    <!-- PERSONAL -->
+    <div class="col-12 separator mt-3">
+        <div class="col-4 m-0 p-0 my-auto mx-auto">Pessoal</div>
+    </div>
+        <div class="row m-1 p-0 mx-auto">
+            <div class="btn-profile p-0 col-10 m-1 mx-auto btn">Amigos</div>
+            <div class="btn-profile p-0 col-10 m-1 mx-auto btn">Cronograma</div>
+            <div class="btn-profile p-0 col-10 m-1 mx-auto btn">Matérias</div>
+            <div class="btn-profile p-0 col-10 m-1 mx-auto btn">Salvos</div>
         </div>
   </div>
 </template>
@@ -27,7 +45,9 @@ export default {
             rankMouse: false,
             username: 'Usuario_12341234',
             profileOptionsShow: true,
-            effectProfile: ''
+            effectProfile: '',
+            abc: false,
+            teste: 0,
         }
     },
     methods: {
@@ -38,7 +58,7 @@ export default {
             } else {
                 this.effectProfile = 'fadeOutDown'
             }
-        }
+        },
     }
 }
 </script>
@@ -48,7 +68,15 @@ export default {
 #profile {
     position: relative;
 }
-#rank-images {
+#rank-img {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    top: 0;
+    opacity: 0;
+    margin-right: 10%;
+}
+#banner-images {
     position: absolute;
     bottom: 30%;
 }
