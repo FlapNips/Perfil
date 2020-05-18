@@ -2,7 +2,7 @@
 <b-row id="layout-main" class="text-center">
         <div class="h-100">
         <!-- MENU MAIN-->
-            <MenuProfile/>
+            <SideMenu/>
         </div>
         <b-col class="col">
             <b-row class="row menu-and-footer">
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import MenuProfile from './SideLeft.vue'
+import SideMenu from './SideLeft.vue'
 import MenuTop from './MenuTop.vue'
 import Content from './Content.vue'
 import FloatRight from './FloatRight.vue'
@@ -33,7 +33,7 @@ import FloatRight from './FloatRight.vue'
 
 export default {
     components: {
-        MenuProfile,
+        SideMenu,
         MenuTop,
         Content,
         FloatRight,

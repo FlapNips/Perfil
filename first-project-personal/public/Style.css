@@ -3,8 +3,8 @@ body {
 }
 :root {
     --first-color: white;
-    --second-color: #00171F;
-    --third-color: #003459;
-    --fourth-color: #007EA7;
-    --fifth-color: rgb(147, 200, 218);
+    --second-color: #000000;
+    --third-color: #5C5C20;
+    --fourth-color: #FFFF5F;
+    --fifth-color: #FFFF65;
 }

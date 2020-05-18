@@ -11,38 +11,34 @@
       sidenav-class="unique-color-dark"
       color="white"
     >
-      <div id="teste" slot="header" class="container-fluid">
-        <div
-          class="row align-items-center my-3"
-          :class="collapsed ? 'justify-content-center' : 'justify-content-start'"
-        >
-          <mdb-avatar :class="collapsed ? 'col-12' : 'col-6'" class="p-0 m-1">
+      <div slot="header" class="row p-0 m-0">
+          <mdb-avatar :class="collapsed ? 'justify-content-center' : 'justify-content-start'" class="align-items-center p-0 m-1">
             <img
               src="https://mdbootstrap.com/img/Photos/Avatars/avatar-7.jpg"
-              class="img-fluid rounded-circle z-depth-1"
-            />
+              class="img-fluid rounded-circle z-depth-1 m-1"
+            /> 
           </mdb-avatar>
-          <p
-            class="m-0 col-5 p-0"
-            style="flex: 0 2 auto"
-            v-show="!collapsed"
-          >
+          <p class="m-0 my-auto col-3 p-0" style="flex: 0 2 auto" v-show="!collapsed">
             <strong>
               <div class="col-6">
-              @Usuário
-              <mdb-icon
-              color="success"
-              icon="circle"
-              class="ml-2"
-              size="sm"
-              />
+               @Usuário
+              <mdb-icon color="success" icon="circle" class="ml-2" size="sm"/>
               </div>
             </strong>
           </p>
-        </div>
-        <hr class="col-7 mx-auto"/>
       </div>
-      <div slot="content" class="mt-5 d-flex justify-content-center">
+        <hr class="col-7 mx-auto"/>
+      <div>
+        <b-nav vertical class="">
+          <b-nav-item hamburger>Active</b-nav-item>
+          <b-nav-item>Link</b-nav-item>
+          <b-nav-item>Another Link</b-nav-item>
+          <b-nav-item disabled>Disabled</b-nav-item>
+        </b-nav>
+      </div>
+
+        <div slot="navigation"></div>
+        <div slot="navigation" class=""></div>
         <mdb-btn
           tag="a"
           class="mx-0"
@@ -52,7 +48,7 @@
           icon-class="white-text"
           @click="collapsed = !collapsed"
         ></mdb-btn>
-      </div>
+
     </mdb-side-nav-2>
 </template>
 
@@ -136,6 +132,14 @@
 </script>
 
 <style>
+#img {
+  position: relative;
+}
+.banner {
+  left: 0;
+  top: 0;
+  position: absolute;
+}
 .view {
 background: url("https://mdbootstrap.com/img/Photos/Others/img (55).jpg")
     no-repeat center center;
