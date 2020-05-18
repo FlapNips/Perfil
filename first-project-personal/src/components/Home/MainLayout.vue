@@ -1,12 +1,9 @@
 <template>
 <b-row id="layout-main" class="text-center">
-        <b-button id="action-button" v-b-toggle.side variant="danger">X</b-button>
-        <b-sidebar id="side">
-            <b-col class="mx-auto p-3">
-            <!-- MENU MAIN-->
-                <MenuProfile/>
-            </b-col>
-        </b-sidebar>
+        <div class="h-100">
+        <!-- MENU MAIN-->
+            <MenuProfile/>
+        </div>
         <b-col class="col">
             <b-row class="row menu-and-footer">
                 <div id="menu-top" class="col-12 border">Menu</div>
@@ -23,28 +20,28 @@
                 <FloatRight/>
                 </b-col>
             </b-row>
-            <b-row class="row" style="height: 5vh">
-                <slot></slot>
-            </b-row>
         </b-col>
 </b-row>
 </template>
 
 <script>
-import MenuProfile from './MenuProfile.vue'
+import MenuProfile from './SideLeft.vue'
 import MenuTop from './MenuTop.vue'
 import Content from './Content.vue'
 import FloatRight from './FloatRight.vue'
+
+
 export default {
     components: {
         MenuProfile,
         MenuTop,
         Content,
-        FloatRight
+        FloatRight,
     },
     data(){
         return {
-            showMenu: true
+            showMenu: true,
+            show: true,
         }
     },
     computed: {
@@ -53,13 +50,13 @@ export default {
                 return 'danger'
             } else {
                 return 'success'
-            }
+                }
         }
     }
-
 }
 </script>
 <style scoped>
+
 #layout-main {
     width: 100vw;
     height: 100vh;
