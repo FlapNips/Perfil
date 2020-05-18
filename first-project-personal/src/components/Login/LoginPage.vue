@@ -7,7 +7,9 @@
 		align-self-center
 		m-3
 		p-2
-		"/>
+		">
+		<slot></slot>
+		</LayoutLogin>
 		
 		<div id="circle-animate" class="
 		d-none 
@@ -42,7 +44,7 @@ export default {
 	margin          : 0;
 	overflow-y      : auto;
 	justify-content : center;
-	background-color: var(--second-color);
+	background-color: var(--first-color);
 	z-index         : -1;
 }
 #circle-animate {
@@ -68,7 +70,7 @@ export default {
 	top             : calc(50% - 400px);
 	width           : 800px;
 	height          : 800px;
-	background-image: linear-gradient(135deg, var(--first-color) 00%, var(--fourth-color) 5%, var(--third-color) 10%, var(--second-color) 50%, var(--fifth-color) 100%);
+	background-image: linear-gradient(135deg, var(--first-color) 0%, var(--second-color) 5%, var(--third-color) 15%, var(--fourth-color) 50%, var(--fifth-color) 100%);
 	border-radius   : 50%;
 
 	/*  Rotate  */
@@ -84,7 +86,7 @@ export default {
 	top             : calc(50% - 375px);
 	width           : 750px;
 	height          : 750px;
-	background-color: var(--second-color);
+	background-color: white;
 	border-radius   : 50%;
 }
 

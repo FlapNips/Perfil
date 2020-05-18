@@ -1,7 +1,7 @@
 <template>
 <div id="layout-main-login"  class="row">
 
-		<Login id="login" class="
+		<Login class="
 		mx-auto
 		col-12
 		col-sm-6
@@ -33,14 +33,12 @@ export default {
 }
 </script>
 <style scoped>
-#login {
-	background-color: var(--first-color);
-}
 #layout-main-login {
 	position        : relative;
 	background-color: var(--first-color);
 	display         : block;
 	border-radius   : 20px;
+	background-color: var(--first-color);
 	margin          : 0;
 	padding         : 20px;
 	height          : max-content;
