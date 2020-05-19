@@ -1,10 +1,8 @@
 <template>
 <b-row id="layout-main" class="text-center">
-        <div class="h-100">
         <!-- MENU MAIN-->
             <MenuProfile/>
-        </div>
-        <b-col class="col">
+        <b-col class="container-fluid">
             <b-row class="row menu-and-footer">
                 <div id="menu-top" class="col-12 border">Menu</div>
                 <!-- MENU TOP RIGHT-->

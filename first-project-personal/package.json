@@ -9,6 +9,7 @@
     "start": "vue-cli-service serve --open"
   },
   "dependencies": {
+    "bootstrap-icons": "^1.0.0-alpha3",
     "bootstrap-vue": "^2.1.0",
     "core-js": "^3.6.4",
     "mdbvue": "^6.7.1",
