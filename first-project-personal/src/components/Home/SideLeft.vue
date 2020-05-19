@@ -1,27 +1,17 @@
 <template>
     <!--/.Navbar-->
-    <mdb-side-nav-2
-      :value="true"
-      :data="navigation"
-      push
-      v-show="teste"
-      slim
-      :slim-collapsed="collapsed"
-      @toggleSlim="collapsed = $event"
-      sidenav-class="unique-color-dark"
-      color="white"
-    >
-      <div id="teste" slot="header" class="container-fluid">
+    <div>
+      <div slot="header" class="container-fluid m-0 p-2 h-100">
         <div
-          class="row align-items-center my-3"
-          :class="collapsed ? 'justify-content-center' : 'justify-content-start'"
+          class="row m-0 p-0 align-items-center my-2"
+          :class="collapsed ? 'col-12' : 'col-12'"
         >
-          <mdb-avatar :class="collapsed ? 'col-12' : 'col-6'" class="p-0 m-1">
+          <div :class="collapsed ? 'col-12' : 'col-6'" class="p-0 m-1">
             <img
               src="https://mdbootstrap.com/img/Photos/Avatars/avatar-7.jpg"
               class="img-fluid rounded-circle z-depth-1"
             />
-          </mdb-avatar>
+          </div>
           <p
             class="m-0 col-5 p-0"
             style="flex: 0 2 auto"
@@ -41,35 +31,60 @@
           </p>
         </div>
         <hr class="col-7 mx-auto"/>
+
+        <!-------- MENU -------->
+        <b-navbar 
+          v-for="menus in navigation" :key="menus.name"
+          id="menu" 
+          class="row m-0 p-0">
+            <b-navbar-brand 
+              class="mx-auto m-1 p-0"
+              :class="collapsed ? 'container-fluid' : 'col-12'">
+              <b-button 
+                class="buttons-menu mx-auto container-fluid py-2 m-0 p-0"
+                >
+                <mdb-icon 
+                :icon="menus.icon" 
+                :class="collapsed ? 'col-12' : 'col-3'"
+                class="m-0 pl-2 text-left"
+                />
+                <div class="col-9 m-0 p-0" v-show="!collapsed">
+                  <b-nav-toggle :target="menus.name">{{menus.name}}</b-nav-toggle>
+                </div>
+              </b-button>
+            </b-navbar-brand>
+
+            <b-navbar-toggle>
+            </b-navbar-toggle>
+
+            <b-collapse :id="menus.name" v-for="submenus in menus.children" :key="submenus.name" class="col-12">
+              <b-navbar-nav>
+                <b-nav-item>{{submenus.name}}</b-nav-item>
+              </b-navbar-nav>
+            </b-collapse>
+        </b-navbar>
+        <!------- BUTTON SIDE ------->
       </div>
-      <div slot="content" class="mt-5 d-flex justify-content-center">
-        <mdb-btn
-          tag="a"
+      <div class="mt-5 bottom justify-content-center">
+      <b-button @click="collapsed = !collapsed">
+        <mdb-icon
           class="mx-0"
-          size="sm"
           floating
           :icon="collapsed ? 'chevron-right' : 'chevron-left'"
-          icon-class="white-text"
-          @click="collapsed = !collapsed"
-        ></mdb-btn>
+        />
+      </b-button>
       </div>
-    </mdb-side-nav-2>
+    </div>
 </template>
 
 <script>
   import {
-    mdbSideNav2,
-    mdbAvatar,
-    mdbBtn,
     mdbIcon
   } from "mdbvue";
 
   export default {
     name: "DoubleNavigationPagev1",
     components: {
-      mdbSideNav2,
-      mdbAvatar,
-      mdbBtn,
       mdbIcon
     },
     data() {
@@ -79,7 +94,7 @@
         teste: true,
         navigation: [
           {
-            name: "Double navigation",
+            name: "Pessoal",
             icon: "bars",
             children: [
               {
@@ -109,9 +124,8 @@
             ]
           },
           {
-            name: "Getting started",
+            name: "Faculdade",
             icon: "mdb",
-            fab: true,
             children: [
               {
                 name: "Quick start",
@@ -125,7 +139,7 @@
             ]
           },
           {
-            name: "Documentation",
+            name: "Configurações",
             icon: "graduation-cap",
             href: "https://mdbootstrap.com/docs/vue/"
           }
@@ -136,6 +150,13 @@
 </script>
 
 <style>
+.buttons-menu {
+  height: 3em;
+}
+#menu {
+  background-color: var(--first-color);
+  box-shadow: none;
+}
 .view {
 background: url("https://mdbootstrap.com/img/Photos/Others/img (55).jpg")
     no-repeat center center;
