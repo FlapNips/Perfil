@@ -1,29 +1,35 @@
 <template>
-<b-row id="layout-main" class="text-center">
-        <!-- MENU MAIN-->
-            <MenuProfile/>
-        <b-col class="container-fluid">
-            <b-row class="row menu-and-footer">
-                <div id="menu-top" class="col-12 border">Menu</div>
-                <!-- MENU TOP RIGHT-->
-                <MenuTop/>
-            </b-row>
-            <b-row id="content" class="row">
-                <b-col class="col-8 border">
-                <!-- CONTENT MAIN-->
-                <Content/>
-                </b-col>
-                <b-col class="col-4 border">
-                <!-- FLOAT RIGHT CONTENT-->
-                <FloatRight/>
-                </b-col>
-            </b-row>
-        </b-col>
-</b-row>
+    <b-container id="layout-main" fluid class="text-center m-0 p-0">
+        <b-row id="content-main" class="m-0 p-0">
+            <div id="menu" class="m-0 p-0" style="background-color: gray;">
+                    <!-- MENU MAIN-->
+                    <SideLeft/>
+            </div>
+            <div id="content" class="m-0 p-0">
+                <b-row class="menu-and-footer m-0 p-0" style="background-color: blue;">
+                        <!-- MENU TOP -->
+                    <MenuTop class="m-0 p-0"/>
+                </b-row>
+                <b-row id="content-main" class=" m-0 p-0">
+                        <b-col class="col-8 m-0 p-0">
+                            <!-- CONTENT MAIN-->
+                            <Content/>
+                        </b-col>
+                        <b-col class="col-4 m-0 p-0" style="background-color: green;">
+                            <!-- FLOAT RIGHT CONTENT-->
+                            <FloatRight/>
+                        </b-col>
+                </b-row>
+            </div>
+        </b-row>
+        <b-row class="menu-and-footer m-0 p-0">
+        <slot/>
+        </b-row>
+    </b-container>
 </template>
 
 <script>
-import MenuProfile from './SideLeft.vue'
+import SideLeft from './Sidebar/SideLeft.vue'
 import MenuTop from './MenuTop.vue'
 import Content from './Content.vue'
 import FloatRight from './FloatRight.vue'
@@ -31,7 +37,7 @@ import FloatRight from './FloatRight.vue'
 
 export default {
     components: {
-        MenuProfile,
+        SideLeft,
         MenuTop,
         Content,
         FloatRight,
@@ -54,23 +60,21 @@ export default {
 }
 </script>
 <style scoped>
-
 #layout-main {
     width: 100vw;
     height: 100vh;
 }
-#action-button {
-    position: absolute;
-    z-index: 1000;
+#content-main {
+    height: 95%;
+}
+#menu {
+    width: 3%!important;
+}
+#content {
+    width: 97%;
 }
 .menu-and-footer {
     height: 5%;
-}
-#content {
-    height: 90%;
-}
-div {
-    margin: 0;
-    padding: 0;
+    width: 100%;
 }
 </style>
