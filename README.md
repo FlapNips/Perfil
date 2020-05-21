@@ -3,7 +3,7 @@
 <img src="https://i.imgur.com/bzb3DHR.gif">
 </p>
 
-**Lorem Ipsum** é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+Não busco apenas uma colocação profissional, mas um posto em que eu possa evoluir pessoal e profissionalmente. Inicialmente acredito que me enquadraria melhor em Full Stack Junior, mas estou sempre aberto a propostas.
 <br>
 <br>
 <br>
@@ -71,7 +71,7 @@
 |JavaScript ECMA3|![enter image description here](https://i.imgur.com/gcELukW.png)|Web|
 |PPO - Programação Orientada a Objeto|![enter image description here](https://i.imgur.com/gcELukW.png)|Web & App|
 |GIT|![enter image description here](https://i.imgur.com/gcELukW.png)|All|
-| Aplicativos Android|![enter image description here](https://i.imgur.com/tuDGLNN.png)|App|
+| Aplicativos Android|![enter image description here](https://i.imgur.com/9AdfDHh.png)|App|
 |VueJS|![enter image description here](https://i.imgur.com/9AdfDHh.png)|Web|
 |Flutter|![enter image description here](https://i.imgur.com/9AdfDHh.png)|App|
 |Firebase|![enter image description here](https://i.imgur.com/9AdfDHh.png)|App|
@@ -104,16 +104,9 @@
 <img src="https://i.imgur.com/cybRjOg.gif">
 </p>
 
-**Lorem Ipsum** é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+Conectado ao ambiente da tecnologia desde muito cedo, iniciei meus estudos como um curioso e amante de games e informações. Com o passar do tempo me desconectei um pouco da área de desenvolvimento mas sempre tive a computação como aliada em facilitar a minha vida e a de outros ao meu redor, adquirindo com o tempo e com a qualidade de ser autodidata, conhecimentos avançados no pacote office e em programas de edição de imagem. Com maior tempo livre é aonde nascem os inovadores, então na quarentena iniciei meus estudos avançados na área de desenvolvimento adquirindo em muito pouco tempo conhecimentos avançados nas mais diversas linguagens, com um único propósito: tornar a tecnologia uma forte aliada na eficiência de resolução de inúmeros problemas da sociedade moderna
 <br>
 <br>
 <br>
 
 <hr>
-<p align="center">
-<a name="projects"></a>
-<img src="https://i.imgur.com/7bxwvKN.gif">
-</p>
-
-**Lorem Ipsum** é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
-
