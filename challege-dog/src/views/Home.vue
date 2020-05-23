@@ -7,7 +7,7 @@
 				<div id="success" v-if="getSave" class="btn btn-success"/>
 			</b-col>
 				<div id="load-data" v-if="useDB">
-					<div class="mx-auto my-auto text-center fade-in fade-out">
+					<div class="mx-auto my-auto text-center">
 						<div class="">Deseja carregar os dados ?</div>
 						<b-row>
 							<b-button @click="loadDB(); useDB = false" class="alert-center col-4 m-2 my-auto mx-auto btn-success">
@@ -109,27 +109,5 @@ export default {
 .alert-center {
 	position: relative;
 	height: 2em;
-}
-.fade-out {
-	animation: fade-out 3s ease-out both;
-}
-.fade-in {
-  animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-	}
-}
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 </style>
