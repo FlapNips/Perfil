@@ -1,5 +1,6 @@
 <template>
 	<b-col id="layout-form" cols="6" class="mx-auto p-4 m-0">
+    <form @submit.prevent="setSave(getBreedConfirm)">
       <b-row>
         <b-col cols="6">
           <label for="layout-breed">
@@ -7,15 +8,12 @@
           </label>
           <b-form-input id="layout-breed" 
             required
+            :state="getBreedConfirm"
             list="list-breed"
             v-model="onBreed"
-            step="100"
-            min="5"
-            max="5"
             placeholder="ex: bulldog" 
-            class="layout-form-class mb-2">
-          </b-form-input>
-          <b-form-datalist id="list-breed" class="h-20" :options="breedsAPI"></b-form-datalist>
+            class="layout-form-class mb-2"/>
+          <b-form-datalist id="list-breed" class="h-20" :options="getBreedsAPI"></b-form-datalist>
         </b-col>
         <b-col cols="6">
           <label for="layout-namedog">
@@ -31,6 +29,7 @@
       <ChooseColor/>
       <ChooseFont/>
       <Submit/>
+    </form>
 	</b-col>
 </template>
 
@@ -50,7 +49,7 @@ export default {
 
 	data() {
 		return {
-			breedsAPI: [],
+      save: false
       } 
     },
     computed: {
@@ -58,7 +57,12 @@ export default {
           'getFont',
           'getNameDog',
           'getColorText',
-          'getBreed'
+          'getBreed',
+          'getImageDog',
+          'getInformationDog',
+          'getBreedConfirm',
+          'getBreedAPI',
+          'getBreedsAPI'
       ]),
       onBreed: {
         get() {
@@ -66,6 +70,19 @@ export default {
         },
         set(value) {
           this.setBreed(value)
+          if(this.getBreedConfirm) {
+            this.setLoading(true)
+            this.$img.get(`${this.getBreed}/images/random`)
+              .then(async res => {
+                this.setImageDog(res.data.message)
+              })
+              .catch(error => {
+                console.log(error)
+              }).then(()=>this.setLoading(false))
+            
+          } else {
+            this.setImageDog('https://sunrivermetalworks.com/wp-content/uploads/2016/07/SMW566-metal-dog-welcome-sign.jpg')
+          }
         }
       },
       onNameDog: {
@@ -80,13 +97,19 @@ export default {
     methods: {
     ...mapMutations([
         'setBreed',
-        'setNameDog'
+        'setNameDog',
+        'setBreedConfirm',
+        'setBreedsAPI',
+        'setImageDog',
+        'setInformationDog',
+        'setSave',
+        'setLoading'
       ]),
     },
     created() {
       this.$http.get("list")
       .then(res => {
-        this.breedsAPI = res.data.message;
+        this.setBreedsAPI(res.data.message)
       }).catch(error => {
         console.log(error)
       })
