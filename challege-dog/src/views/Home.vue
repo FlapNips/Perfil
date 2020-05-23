@@ -4,8 +4,8 @@
 			<b-col cols="12" class="m-0 p-0">
 				<ImageDog style="height: 20%"></ImageDog>
 				<ImputForm style="height: 40%" ></ImputForm>
-				<div id="success" v-if="getSave" class="btn btn-success"/>
 			</b-col>
+<<<<<<< HEAD
 				<div id="load-data" v-if="useDB">
 					<div class="mx-auto my-auto text-center">
 						<div class="">Deseja carregar os dados ?</div>
@@ -19,61 +19,21 @@
 						</b-row>
 					</div>
 				</div>
+=======
+>>>>>>> parent of 6095cdb... Antes de colocar MDB
 		</b-row>
 	</div>
 </template>
 
 <script>
 import ImputForm from "@/components/LayoutInputForm.vue";
-import ImageDog from "@/components/ImageDog.vue";
-import { mapGetters } from 'vuex';
-import { mapMutations } from 'vuex';
+import ImageDog from "@/components/ImageDog.vue"
 
 export default {
 	components: {
 		ImputForm,
 		ImageDog
 	},
-	data() {
-		return {
-			success: false,
-			useDB : false
-		}
-	},
-	computed:{
-		...mapGetters([
-			'getSave',
-			'getBreed',
-			'getInformationDog',
-
-		])
-	},
-	methods: {
-		...mapMutations([
-			'setSave',
-			'setInformationDog',
-			'loadData',
-			'setResetAll'
-		]),
-		loadDB() {
-			const json = localStorage.getItem('informationDog')
-			const array = JSON.parse(json)
-			if (Array.isArray(array)) {
-				this.setInformationDog(array)
-				this.loadData(array)
-				console.log(this.getBreed)
-			}
-		}
-	},
-	created() {
-		const json = localStorage.getItem('informationDog')
-		const array = JSON.parse(json)
-		if(Array.isArray(array)) {
-			this.useDB = true
-		} else {
-			this.setInformationDog([])
-		}
-	}
 };
 </script>
 <style scoped>
@@ -85,6 +45,7 @@ export default {
 	height: 100vh!important;
 	width: 100vw!important;
 }
+<<<<<<< HEAD
 #load-data {
 	position: absolute;
 	display: flex;
@@ -110,4 +71,6 @@ export default {
 	position: relative;
 	height: 2em;
 }
+=======
+>>>>>>> parent of 6095cdb... Antes de colocar MDB
 </style>
