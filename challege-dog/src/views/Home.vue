@@ -6,6 +6,7 @@
 				<ImputForm style="height: 40%" ></ImputForm>
 			</b-col>
 <<<<<<< HEAD
+<<<<<<< HEAD
 				<div id="load-data" v-if="useDB">
 					<div class="mx-auto my-auto text-center">
 						<div class="">Deseja carregar os dados ?</div>
@@ -19,6 +20,8 @@
 						</b-row>
 					</div>
 				</div>
+=======
+>>>>>>> parent of 6095cdb... Antes de colocar MDB
 =======
 >>>>>>> parent of 6095cdb... Antes de colocar MDB
 		</b-row>
@@ -46,6 +49,7 @@ export default {
 	width: 100vw!important;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 #load-data {
 	position: absolute;
 	display: flex;
@@ -71,6 +75,8 @@ export default {
 	position: relative;
 	height: 2em;
 }
+=======
+>>>>>>> parent of 6095cdb... Antes de colocar MDB
 =======
 >>>>>>> parent of 6095cdb... Antes de colocar MDB
 </style>
