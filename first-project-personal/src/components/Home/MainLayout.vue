@@ -1,11 +1,11 @@
 <template>
     <b-container id="layout-main" fluid class="text-center m-0 p-0">
         <b-row id="content-main" class="m-0 p-0">
-            <div id="menu" class="m-0 p-0" style="background-color: gray;">
+            <div id="menu-sidebar" class="m-0 p-0 h-100" style="background-color: gray;">
                     <!-- MENU MAIN-->
                     <SideLeft/>
             </div>
-            <div id="content" class="m-0 p-0">
+            <div id="content-right" class="m-0 p-0">
                 <b-row class="menu-and-footer m-0 p-0" style="background-color: blue;">
                         <!-- MENU TOP -->
                     <MenuTop class="m-0 p-0"/>
@@ -20,10 +20,10 @@
                             <FloatRight/>
                         </b-col>
                 </b-row>
+                <b-row class="menu-and-footer m-0 p-0">
+                <slot/>
+                </b-row>
             </div>
-        </b-row>
-        <b-row class="menu-and-footer m-0 p-0">
-        <slot/>
         </b-row>
     </b-container>
 </template>
@@ -65,16 +65,17 @@ export default {
     height: 100vh;
 }
 #content-main {
-    height: 95%;
+    height: 100%;
 }
-#menu {
+#menu-sidebar {
     width: 3%!important;
 }
-#content {
+#content-right {
     width: 97%;
+    height: 94%;
 }
 .menu-and-footer {
-    height: 5%;
+    height: 3%;
     width: 100%;
 }
 </style>

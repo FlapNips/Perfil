@@ -1,25 +1,25 @@
 <template>
-  <div>
+  <div class="p-0 m-0">
     <b-navbar
       v-for="menus in navigation" :key="menus.name"
       id="menu"   
       toggleable
-      class="row m-0 p-0">
+      class="col-10 my-3 p-0 mx-auto">
         <b-nav-toggle   
-          class="mx-auto m-1 p-0 col-12"
+          class="mx-auto m-0 p-0 col-12"
           :target="menus.name">
             <b-button
               data-toggle="tooltip"
               :title="menus.name"
               class="buttons-menu mx-auto container-fluid py-2 m-0 p-0"
               variant="primary">
-              <div class="col-10 m-0 p-0">
-                {{menus.name}}
-              </div>
               <b-icon 
               :icon="menus.icon" 
-              class="m-0 col-2justify-content-center p-2"
+              class="m-0 col-4 justify-content-center p-0"
               />
+              <b-col col class="m-0 p-0">
+                {{menus.name}}
+              </b-col >
             </b-button>
         </b-nav-toggle>
 
@@ -115,7 +115,8 @@ export default {
         }
   }
 </script>
-
 <style>
-
+.buttons-menu {
+  text-transform: none!important;
+}
 </style>

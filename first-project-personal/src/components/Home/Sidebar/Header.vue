@@ -1,27 +1,14 @@
 <template>
-    <div id="header-menu" class="justify-content-center row m-0 p-0">
-        <div class="col-5 m-1 mr-auto p-0 m-0">
-        <b-img
-            src="@/assets/profile.png"
-            class="img-fluid rounded-circle z-depth-1"
-        />
-            <b-img id="rank-img" @mouseenter="teste" class="col-3 p-0" src="@/assets/rank.png"/>
+    <div id="header-menu" class=" justify-content-center row h-25 m-0 p-0">
+        <div class="col-6 m-0 p-0 m-1" >
+            <b-img
+                src="@/assets/profile.png"
+                class="img-fluid rounded-circle z-depth-1 mx-auto"
+                @mouseenter="collapsed(false)"
+                @mouseleave="collapsed(true)"
+            />
         </div>
-        <b-sidebar >
-            teste
-        </b-sidebar>
-        <div class="col-6 mx-auto border p-0 m-0">
-            <div class="col-12 m-0 p-0">Rank Atual</div>
-            <div class="col-12 m-0 p-0">Novato</div>
-            <div class="col-12 m-0 p-0">Pontuação</div>
-            <div class="col-12 m-0 p-0">9999</div>
-        </div>
-        <strong class="mx-auto">@Usuário_1212</strong>
-        <div class="row m-0 mt-1 p-0">
-        <p class="col-12 m-0 p-0 border">
-            Descrição.Isso é uma descrição de cinquenta letras.
-        </p>
-        </div>
+        <b-col class="col-12">@Usuário_1212</b-col>
     </div>
 </template>
 
@@ -29,13 +16,24 @@
 export default {
     data() {
         return {
-            teste: false
+            teste: false,
+        }
+        
+    },
+    methods: {
+        collapsed(newValue) {
+            console.log('Aqui foi o novo valor' + newValue)
+            return this.$store.commit('showMoreInformation', newValue);
         }
     }
 }
 </script>
 
 <style>
+#header-menu {
+    position: relative;
+    height: 20%;
+}
 #rank-img {
     position: absolute;
     top: 0;
