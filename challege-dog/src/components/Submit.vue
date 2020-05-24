@@ -1,47 +1,46 @@
+
 <template>
 	<b-row class="m-1">
-		<button @click="setResetAll(); image = getImageDog" class="btn btn-secondary mr-auto">Reiniciar</button>
-		<button @click="saveDog()" type="submit" class="btn btn-secondary mx-auto">Salvar</button>
-		<button @click="setImageDog = updateImage()" class="btn btn-secondary ml-auto">Atualizar</button>
+		<b-button @click="setResetAll" class="btn btn-secondary mr-auto">Resetar</b-button>
+		<b-button @click="changeImg()" class="btn btn-warning mx-auto">Trocar Imagem</b-button>
+		<b-button type="submit" class="btn btn-success ml-auto">Salvar</b-button>
 	</b-row>
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
 import { mapGetters } from 'vuex'
-
+import { mapMutations } from 'vuex'
 export default {
 	computed: {
 		...mapGetters([
-			'getImageDog',
 			'getBreed',
-			'getImageDog'
+			'getBreedConfirm',
 		]),
-
-	},
-	asyncComputed: {
-		async updateImage() {
-			return await this.$img.get(`${this.getBreed}/images/random`)
-			.then( res => {
-				res.data.message
-			});
-		}
 	},
 	methods: {
 		...mapMutations([
 			'setImageDog',
-			'setResetAll'
+			'setLoading',
+			'setResetAll',
 		]),
-
-		ResetAll() {
-			this.setResetAll
-		},
-		saveDog() {
+		changeImg() {
+			if(this.getBreedConfirm) {
+				this.setLoading(true)
+				this.$img.get(`${this.getBreed}/images/random`)
+					.then(async res => {
+						this.setImageDog(res.data.message)
+					})
+					.catch(error => {
+						console.log(error)
+					}).then(()=>this.setLoading(false))
+				
+			} else {
+				this.setImageDog('https://sunrivermetalworks.com/wp-content/uploads/2016/07/SMW566-metal-dog-welcome-sign.jpg')
+			}
 		}
 	}
 }
 </script>
 
-<style>
-
+<style scoped>
 </style>
