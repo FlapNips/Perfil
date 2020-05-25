@@ -1,5 +1,7 @@
 # challege-dog
-
+[img]https://i.imgur.com/YwVA7ax.png[/img]
+[img]https://i.imgur.com/B4Fj78z.png[/img]
+[img]https://i.imgur.com/CWLl33P.png[/img]
 ## Project setup
 ```
 npm install
