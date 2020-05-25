@@ -1,10 +1,12 @@
 <template>
 	<b-col cols="6" class="mx-auto m-2 text-center">
+		<!-- NAME DOG IN IMAGE -->
 		<div id="layout-namedog" 
 			:style="`color: ${getColorText};font-family: ${getFont};`"
 			>
 				{{getNameDog}}
 			</div>
+		<!-- INPUT IMAGE BREED -->
 		<b-overlay id="layout-image" :show="getLoading" class="d-inline-block" rounded="circle">
 			<b-img 
 			id="image-dog"
