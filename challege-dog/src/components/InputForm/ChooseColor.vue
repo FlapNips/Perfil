@@ -1,7 +1,7 @@
 <template>
 	<b-row class="py-3 text-center">
 		<label for="radio-buttons-colors" class="col-12">Escolha a cor do texto:</label>
-		<b-form-radio-group id="radio-buttons-colors" buttons v-model="onColorText" class="col-12 p-2">
+		<b-form-radio-group id="radio-buttons-colors" buttons v-model="onColorText" class="col-12 my-1 mx-1 mx-auto p-2">
 			<template v-for="color in fontColors">
 				<b-form-radio
 					:value="color.value"

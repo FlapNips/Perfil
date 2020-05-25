@@ -4,11 +4,14 @@
 		<b-row id="layout-fonts" buttons v-model="chooseFont" class="my-auto m-0 p-0">
 			<div class="mx-auto col-12">
 				<b-col
+				xl="3"
+				lg="4"
+				xm="12"
 					v-for="(font,index) in fontStyle"
 					@click=" chooseFont = index"
 					:value="font.value"
 					:key="font.text"
-					class="btn btn-secondary buttons-fonts col-3 m-2 p-0"
+					class="btn btn-secondary buttons-fonts m-2 p-0"
 					:class="[classButtons(index), getFont==font.text ? 'choose-font-family-selected' : '']"
 				>{{ font.text }}</b-col>
 			</div>

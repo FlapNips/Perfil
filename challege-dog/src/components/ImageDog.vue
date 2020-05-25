@@ -1,21 +1,26 @@
 <template>
-	<b-col cols="6" class="mx-auto m-2 text-center">
-		<!-- NAME DOG IN IMAGE -->
-		<div id="layout-namedog" 
-			:style="`color: ${getColorText};font-family: ${getFont};`"
+	<b-row class="m-2 p-0 text-center">
+		<b-overlay 
+			id="layout-image" 
+			:show="getLoading" 
+			class="d-inline-block mx-auto" 
+			rounded="circle"
 			>
-				{{getNameDog}}
-			</div>
-		<!-- INPUT IMAGE BREED -->
-		<b-overlay id="layout-image" :show="getLoading" class="d-inline-block" rounded="circle">
+			<!-- INPUT IMAGE BREED -->
 			<b-img 
 			id="image-dog"
 			:src="getImageDog" 
 			rounded="circle" 
 			class="mx-auto m-0 p-0"
 			/>
+			<!-- NAME DOG IN IMAGE -->
+			<div id="layout-namedog" 
+			:style="`color: ${getColorText};font-family: ${getFont};`"
+			>
+				{{getNameDog}}
+			</div>	
 		</b-overlay>
-	</b-col>
+	</b-row>
 </template>
 <script>
 import { mapGetters } from 'vuex'
@@ -35,6 +40,7 @@ export default {
 
 <style scoped>
 #layout-image {
+	max-width: 90vw!important;
   max-height: 50vh!important;
 	font-size: 2em;
 }
@@ -44,7 +50,7 @@ export default {
 #layout-namedog {
 	z-index: 3;
 	position: absolute;
-	font-size: 2em;
+	font-size: 1em;
 	left: 50%;
 	bottom: 0;
 	transform: translateX(-50%);

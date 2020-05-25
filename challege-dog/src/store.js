@@ -125,6 +125,12 @@ export default new Vuex.Store({
         return false
       }
     },
+    getTime(state){
+      return state.time
+    },
+    getDate(state){
+      return state.date
+    },
     getSave(state) {
       return state.save
     },

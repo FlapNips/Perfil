@@ -1,36 +1,49 @@
 <template>
-	<b-col id="layout-form" cols="6" class="mx-auto p-4 m-0">
-		<form @submit.prevent="setSave(getBreedConfirm)">
-			<b-row>
-				<b-col cols="6">
-					<label for="layout-breed">Escolha a raça:</label>
-					<b-form-input
-						id="layout-breed"
-						required
-						:state="getBreedConfirm"
-						list="list-breed"
-						v-model="onBreed"
-						placeholder="ex: bulldog"
-						class="layout-form-class mb-2"
-					/>
-					<b-form-datalist id="list-breed" class="h-20" :options="getBreedsAPI"></b-form-datalist>
-				</b-col>
-				<b-col cols="6">
-					<label for="layout-namedog">Defina o nome:</label>
-					<b-form-input
-						id="layout-namedog"
-						required
-						v-model="onNameDog"
-						placeholder="ex: Lupi"
-						class="layout-form-class mb-2"
-					/>
-				</b-col>
-			</b-row>
-			<ChooseColor />
-			<ChooseFont />
-			<Submit />
-		</form>
-	</b-col>
+	<b-row class="mx-auto p-0 m-0">
+			<b-form 
+				id="layout-form" 
+				@submit.prevent="setSave(getBreedConfirm)" 
+				class="col-xl-6 col-lg-6 col-xs-12 col-sm-12 p-1 m-0	 mx-auto"
+				>
+					<b-row class="m-0 p-0">
+					<b-col 
+						xl="5"
+						lg="5"
+						xs="12"
+						class="mx-auto m-2 p-1">
+						<label for="layout-breed">Escolha a raça:</label>
+						<b-form-input
+							id="layout-breed"
+							required
+							:state="getBreedConfirm"
+							list="list-breed"
+							v-model="onBreed"
+							placeholder="ex: bulldog"
+							class="layout-form-class mb-2"
+						/>
+						<b-form-datalist id="list-breed" class="h-20" :options="getBreedsAPI"></b-form-datalist>
+					</b-col>
+					<b-col 
+						xl="5"
+						lg="5"
+						xs="12"
+						class="m-2 p-1 mx-auto"
+						>
+						<label for="layout-namedog">Defina o nome:</label>
+						<b-form-input
+							id="layout-namedog"
+							required
+							v-model="onNameDog"
+							placeholder="ex: Lupi"
+							class="layout-form-class mb-2"
+						/>
+					</b-col>
+					</b-row>
+				<ChooseColor />
+				<ChooseFont />
+				<Submit />
+			</b-form>
+	</b-row>
 </template>
 
 <script>
@@ -123,8 +136,5 @@ export default {
 	#layout-form {
 		background-color: rgb(168, 168, 168);
 		border-radius: 20px;
-	}
-	datalist {
-		height: 200px !important;
 	}
 </style>

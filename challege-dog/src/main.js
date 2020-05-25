@@ -6,7 +6,6 @@ import '@babel/polyfill'
 import './plugins/bootstrap-vue'
 import './plugins/axios'
 
-
 Vue.config.productionTip = false
 
 new Vue({

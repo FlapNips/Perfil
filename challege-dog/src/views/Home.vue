@@ -1,15 +1,17 @@
 <template>
-	<div id="layout-main" class="m-0 mb-auto p-0">
-		<b-row align-v="center" align-h="center" class="m-0 p-0">
+	<div id="layout-main" fluid class="m-0 mx-auto h-100 p-0">
+		<b-row id="form-layout" class="m-0 h-25 p-0">
 			<!-- FORM -->
-			<b-col cols="12" class="m-0 p-0">
-				<ImageDog style="height: 20%"></ImageDog>
-				<ImputForm style="height: 40%"></ImputForm>
+			<b-col cols="12" class="m-0 p-0 mx-auto">
+				<ImageDog/>
+				<ImputForm/>
 			</b-col>
 			<!-- SCREEN LOADING DB -->
-			<div id="load-data" v-show="useDB" :class="useDB ? 'fade-in': 'fade-out'">
+			<b-col id="load-data" v-show="useDB" class="fade-in h-100 w-100">
 				<div class="mx-auto my-auto text-center">
-					<div class>Deseja carregar os dados ?</div>
+					<div class="m-1">Deseja carregar os dados ?</div>
+					<div class="m-1">Último dado salvo : {{date}}</div>
+					<div class="m-1">Horário : {{time}}</div>
 					<b-row>
 						<b-button
 							@click="loadDB(); useDB = false"
@@ -21,7 +23,7 @@
 						>Não</b-button>
 					</b-row>
 				</div>
-			</div>
+			</b-col>
 		</b-row>
 		<!-- SCREEN SAVE CONFIRMED -->
 		<b-row id="save-confirmed" v-show="getSave" class="fade-in m-0 p-0 text-center">
@@ -34,6 +36,8 @@
 				<b-button @click="setBack(true)" class="btn-warning">Voltar</b-button>
 			</b-col>
 		</b-row>
+		<!-- IMAGE SLOT ( APP ) -->
+		<slot/>
 	</div>
 </template>
 
@@ -50,16 +54,21 @@ export default {
 	data() {
 		return {
 			success: false,
-			useDB: false
+			useDB: false,
+			date: '',
+			time: ''
 		};
 	},
 	computed: {
 		...mapGetters([
 			"getSave",
+			"getDate",
+			"getTime",
 			"getBreed",
 			"getInformationDog"
 			])
 	},
+
 	methods: {
 		...mapMutations([
 			"setSave",
@@ -74,12 +83,6 @@ export default {
 			if (Array.isArray(array)) {
 				this.setInformationDog(array);
 				this.loadData(array);
-				console.log("O arquivo foi carregado :")
-				console.log(array)
-				console.log("Sendo salvo no dia :")
-				console.log(array[0].date)
-				console.log("e no horário : ")
-				console.log(array[0].time)
 			}
 		}
 	},
@@ -88,6 +91,8 @@ export default {
 		const array = JSON.parse(json);
 		if (Array.isArray(array)) {
 			this.useDB = true;
+			this.date = array[0].date
+			this.time = array[0].time
 		} else {
 			this.setInformationDog([]);
 		}
@@ -96,12 +101,10 @@ export default {
 </script>
 <style scoped>
 	#layout-main {
-		background-position: center;
-		background-repeat: no-repeat;
-
-		background-size: cover;
-		height: 100vh !important;
-		width: 100vw !important;
+		position: relative;
+		height: max-content!important;
+	}
+	#form-layout {
 	}
 	#load-data {
 		position: absolute;
@@ -112,8 +115,6 @@ export default {
 		justify-content: center;
 		text-align: center;
 		background-color: rgba(228, 126, 53, 0.9);
-		height: 100% !important;
-		width: 100% !important;
 	}
 	#save-confirmed {
 		position: absolute;

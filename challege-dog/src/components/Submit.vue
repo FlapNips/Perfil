@@ -1,8 +1,8 @@
 <template>
 	<b-row class="m-1">
-		<b-button @click="setResetAll" class="btn btn-warning mr-auto">Resetar</b-button>
-		<b-button @click="changeImg()" class="btn btn-warning mx-auto">Trocar Imagem</b-button>
-		<b-button type="submit" class="btn btn-success ml-auto">Salvar</b-button>
+		<b-button @click="setResetAll" class="btn btn-dark mr-auto">Resetar</b-button>
+		<b-button @click="changeImg()" class="btn btn-dark mx-auto">Trocar Imagem</b-button>
+		<b-button type="submit" class="btn btn-dark ml-auto">Salvar</b-button>
 	</b-row>
 </template>
 
