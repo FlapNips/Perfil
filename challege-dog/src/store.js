@@ -1,4 +1,4 @@
-
+  
 import Vue from 'vue'
 import Vuex from 'vuex'
 
@@ -6,8 +6,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    breed: '',
-    breedsAPI: [],
+    breed : '',
+    breedsAPI : [],
     nameDog: '',
     colorText: 'black',
     font: 'Chelsea Market',
@@ -15,7 +15,7 @@ export default new Vuex.Store({
     informationDog: [],
     breedConfirm: null,
     save: false,
-    loading: false,
+    loading : false,
     date: '',
     time: '',
   },
@@ -38,7 +38,7 @@ export default new Vuex.Store({
     setImageDog(state, payload) {
       state.imageDog = payload
     },
-    setResetAll(state) {
+    setResetAll(state){
       state.breed = '';
       state.nameDog = '';
       state.colorText = 'black';
@@ -52,7 +52,7 @@ export default new Vuex.Store({
     setBreedConfirm(state, payload) {
       state.breedConfirm = payload
     },
-    setSave(state, payload) {
+    setSave(state,payload) {
       if (payload) {
         let today = new Date();
         const hh = today.getHours();
@@ -63,34 +63,34 @@ export default new Vuex.Store({
         const yyyy = today.getFullYear();
         today = `${dd} / ${mm} / ${yyyy}`
         let time = `${hh}:${min}:${sec}`
-        state.informationDog = [{
-          name: state.nameDog,
-          breed: state.breed,
-          font: state.font,
-          color: state.colorText,
-          image: state.imageDog,
-          date: today,
-          time: time
-        }];
-        console.log(state.informationDog)
-        state.save = true
-        console.log('SALVO')
-        localStorage.setItem('informationDog', JSON.stringify(state.informationDog))
+      state.informationDog = [{
+        name : state.nameDog,
+        breed: state.breed,
+        font : state.font,
+        color: state.colorText,
+        image  : state.imageDog,
+        date : today,
+        time : time
+      }];
+      console.log(state.informationDog)
+      state.save = true
+      console.log('SALVO')
+      localStorage.setItem('informationDog', JSON.stringify(state.informationDog))
       } else {
-        console.log('Erro ao salvar')
-      }
+          console.log('Erro ao salvar')
+        }
     },
     setLoading(state, payload) {
       state.loading = payload
     },
     loadData(state, payload) {
-      state.breed = payload[0].breed
-      state.nameDog = payload[0].name
+      state.breed     = payload[0].breed
+      state.nameDog   = payload[0].name
       state.colorText = payload[0].color
-      state.font = payload[0].font
-      state.imageDog = payload[0].image
-      state.date = payload[0].data
-      state.time = payload[0].time
+      state.font      = payload[0].font
+      state.imageDog  = payload[0].image
+      state.date  = payload[0].data
+      state.time  = payload[0].time
 
     }
   },
@@ -113,20 +113,20 @@ export default new Vuex.Store({
     getImageDog(state) {
       return state.imageDog
     },
-    getInformationDog(state) {
+    getInformationDog(state){
       return state.informationDog
     },
-    getBreedConfirm(state) {
-      if (state.breedsAPI.includes(state.breed)) {
-        return true
+    getBreedConfirm(state){
+      if(state.breedsAPI.includes(state.breed)){
+      return true
       } else {
-        return false
+      return false
       }
     },
-    getSave(state) {
+    getSave(state){
       return state.save
     },
-    getLoading(state) {
+    getLoading(state){
       return state.loading
     },
   },
