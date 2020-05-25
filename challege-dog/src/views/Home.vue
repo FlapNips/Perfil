@@ -1,43 +1,43 @@
 <template>
 	<div id="layout-main" fluid class="m-0 mx-auto h-100 p-0">
-		<b-row id="form-layout" class="m-0 h-25 p-0">
+		<b-row id="form-layout" class="m-0 h-100 p-0">
 			<!-- FORM -->
 			<b-col cols="12" class="m-0 p-0 mx-auto">
 				<ImageDog/>
 				<ImputForm/>
-			</b-col>
-			<!-- SCREEN LOADING DB -->
-			<b-col id="load-data" v-show="useDB" class="fade-in h-100 w-100">
-				<div class="mx-auto my-auto text-center">
-					<div class="m-1">Deseja carregar os dados ?</div>
-					<div class="m-1">Último dado salvo : {{date}}</div>
-					<div class="m-1">Horário : {{time}}</div>
-					<b-row>
-						<b-button
-							@click="loadDB(); useDB = false"
-							class="alert-center col-4 m-2 my-auto mx-auto btn-success"
-						>Sim</b-button>
-						<b-button
-							@click="setResetAll(); useDB = false"
-							class="alert-center col-4 m-2 my-auto mx-auto btn-danger"
-						>Não</b-button>
-					</b-row>
-				</div>
+					<!-- SCREEN LOADING DB -->
+					<b-col id="load-data" v-show="useDB" class="fade-in h-100 w-100">
+						<div class="mx-auto my-auto text-center">
+							<div class="m-1">Deseja carregar os dados ?</div>
+							<div class="m-1">Último dado salvo : {{date}}</div>
+							<div class="m-1">Horário : {{time}}</div>
+							<b-row>
+								<b-button
+									@click="loadDB(); useDB = false"
+									class="alert-center col-4 m-2 my-auto mx-auto btn-success"
+								>Sim</b-button>
+								<b-button
+									@click="setResetAll(); useDB = false"
+									class="alert-center col-4 m-2 my-auto mx-auto btn-danger"
+								>Não</b-button>
+							</b-row>
+						</div>
+					</b-col>
+				<!-- SCREEN SAVE CONFIRMED -->
+				<b-row id="save-confirmed" v-show="getSave" class="fade-in m-0 p-0 text-center h-100 w-100">
+					<b-col class="my-auto h-25">
+						<b-img id="image-sucess"
+						src="https://www.pinclipart.com/picdir/big/0-9831_icon-icone-simbols-simbolo-certo-clipart-clip-art.png"
+						class="h-100"
+						/>
+						<div>Salvo com sucesso !</div>
+						<b-button @click="setBack(true)" class="btn-warning">Voltar</b-button>
+					</b-col>
+				</b-row>
+				<!-- IMAGE BY SLOT ( APP ) -->
+				<slot/>
 			</b-col>
 		</b-row>
-		<!-- SCREEN SAVE CONFIRMED -->
-		<b-row id="save-confirmed" v-show="getSave" class="fade-in m-0 p-0 text-center">
-			<b-col class="my-auto h-25">
-				<b-img id="image-sucess"
-				src="https://www.pinclipart.com/picdir/big/0-9831_icon-icone-simbols-simbolo-certo-clipart-clip-art.png"
-				class="h-100"
-				/>
-				<div>Salvo com sucesso !</div>
-				<b-button @click="setBack(true)" class="btn-warning">Voltar</b-button>
-			</b-col>
-		</b-row>
-		<!-- IMAGE SLOT ( APP ) -->
-		<slot/>
 	</div>
 </template>
 
@@ -104,8 +104,6 @@ export default {
 		position: relative;
 		min-height: max-content!important;
 	}
-	#form-layout {
-	}
 	#load-data {
 		position: absolute;
 		display: flex;
@@ -122,8 +120,8 @@ export default {
 		top: 0;
 		left: 0;
 		z-index: 15;
-		height: 100%;
-		width: 100%;
+		height: max-content;
+		width: max-content;
 	}
 	.alert-center {
 		position: relative;

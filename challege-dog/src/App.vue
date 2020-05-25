@@ -1,8 +1,8 @@
 <template>
 	<div id="app" class="m-0 p-0 mx-auto h-100 w-100">
 		<router-view >
-		</router-view>
 			<b-img id="background-image" class="h-100 w-100"/>
+		</router-view>
 	</div>
 </template>
 <script>
