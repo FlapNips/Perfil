@@ -2,7 +2,7 @@
 	<b-container fluid class="p-0 text-center">
 		<label for="radio-buttons-colors" class="col-12">Escolha a fonte do texto:</label>
 		<b-row id="layout-fonts" buttons v-model="chooseFont" class="my-auto m-0 p-0">
-			<div class="mx-auto col-12">
+			<div class="mx-auto col-12">''
 				<b-col
 				xl="3"
 				lg="4"

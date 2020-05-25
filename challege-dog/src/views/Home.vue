@@ -102,7 +102,7 @@ export default {
 <style scoped>
 	#layout-main {
 		position: relative;
-		height: max-content!important;
+		min-height: max-content!important;
 	}
 	#form-layout {
 	}

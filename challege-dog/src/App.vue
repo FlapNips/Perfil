@@ -1,5 +1,5 @@
 <template>
-	<div id="app" class="m-0 p-0 mx-auto w-100">
+	<div id="app" class="m-0 p-0 mx-auto h-100 w-100">
 		<router-view >
 		</router-view>
 			<b-img id="background-image" class="h-100 w-100"/>
@@ -14,16 +14,16 @@
 	#background-image {
 		position: absolute;
 		top: 0;
-		width: auto;
-
+		min-width: max-content;
+		min-height: max-content;
 		left: 0;
 		z-index: -1;
-		background-size: ;
+		background-size: cover;
 		opacity: 0.5;
 		background-image: url("https://avante.biz/wp-content/uploads/Dogs-Wallpapers/Dogs-Wallpapers-052.jpg");
 	}
 	#app {
 	position: absolute;
-	height: max-content!important;
+	min-height: max-content!important;
 	}
 </style>
