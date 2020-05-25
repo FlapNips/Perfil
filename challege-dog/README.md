@@ -1,15 +1,15 @@
 # challege-dog
 
 <p align="center">
-![Image Project](https://i.imgur.com/YwVA7ax.png)
+<img src="https://i.imgur.com/YwVA7ax.png">
 </p>
 
 <p align="center">
-![Image Project](https://i.imgur.com/B4Fj78z.png)
+<img src="https://i.imgur.com/B4Fj78z.png"
 </p>
 
 <p align="center">
-![Image Project](https://i.imgur.com/CWLl33P.png)
+<img src="https://i.imgur.com/CWLl33P.png"
 </p>
 
 ## Project setup
