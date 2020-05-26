@@ -72,6 +72,7 @@ Não busco apenas uma colocação profissional, mas um posto em que eu possa evo
 |JavaScript ECMA3|![enter image description here](https://i.imgur.com/gcELukW.png)|Web|
 |PPO - Programação Orientada a Objeto|![enter image description here](https://i.imgur.com/gcELukW.png)|Web & App|
 |GIT|![enter image description here](https://i.imgur.com/gcELukW.png)|All|
+|BootStrap|![enter image description here](https://i.imgur.com/gcELukW.png)|All|
 | Aplicativos Android|![enter image description here](https://i.imgur.com/9AdfDHh.png)|App|
 |VueJS|![enter image description here](https://i.imgur.com/9AdfDHh.png)|Web|
 |Flutter|![enter image description here](https://i.imgur.com/9AdfDHh.png)|App|
